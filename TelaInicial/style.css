@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7vh;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    padding-top: 4vh;
+    padding-bottom:4vh;
+    background-image: url(../assets/ufpr-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrap-card{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+h1, h3{
+    justify-content: center;
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+    width: 50vh;
+    background-color: black;
+    border-radius: 10vh;
+}
+
+.card{
+    border-radius: 20px !important;
+    border: 4px solid white !important;
+    transition: transform 0.3s ease-in-out;
+    border: 1;
+    height: 55vh;
+}
+
+.card:hover{
+    transform: scale(1.1);
+
+}
+
+.card .card-img-top{
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-image: url(../assets/ufpr-.jpg);
+    }
+
+    .wrap-card {
+        flex-direction: column;
+        gap: 8vw;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        white-space: nowrap;
+        width: 40vh;
+    }
+
+}
+
+.click,
+.card-title{
+    font-weight: bold;
+}
+
+.transform{
+    transition: ease-in-out;
+}
+
+.transform:hover{
+    transform: scale(1.1);  
+}
+
+.btn-group{
+    gap: 1vh;
+}
