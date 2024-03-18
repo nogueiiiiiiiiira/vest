@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7vh;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    padding-top: 4vh;
+    padding-bottom:4vh;
+    background: linear-gradient(45deg, #ff0000, #ff99cc);}
+
+.cards{
+    height: 55vh;
+    width: 60vw;
+    justify-content: center;
+    display: flex;
+}
+
+.carousel-inner{
+    border-radius: 50px !important;
+}
+
+.carousel-caption{
+    text-align: center;
+    display: flex;
+}
+
+h5{
+    margin-bottom: 10vh;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 30vh;
+}
+
+.carousel-caption p{
+    margin-bottom: 35vh;
+    background-color: white;
+    border-radius: 20px !important;
+    border: 4px solid white !important;
+    border: 1;
+}
+
+.top{
+    margin-bottom: 4vh;
+}
+
+.top-2{
+    margin-bottom: 9vh;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px !important;
+    border: 1;
+}
+
+.hero-btn:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.wrap-card{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2vh;
+    flex-wrap: wrap;
+}
+
+.card{
+    border-radius: 20px !important;
+    border: 1px solid black !important;
+    border: 1;
+    height: 40vh;
+    gap: 2vh;
+}
+
+.ease-in-out{
+    transition: ease-in-out 0.2s;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.ease-in-out:hover{
+    transform: scale(1.1);
+}
+
+#enredo-pt2{
+    margin-top: 14vh;
+}
+
+#enredo-pt3{
+    margin-top: 9.3vh;
+}
+
+#enredo-pt4{
+    margin-top: 4.5vh;
+}
+
+#enredo-pt5{
+    margin-top: 7vh;
+}
+
+#enredo-pt6{
+    margin-top: 4.5vh;
+}
+
+#enredo-pt7{
+    margin-top: 7vh;
+}
+
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6,
+#card7{
+    display: none;
+}
+
+.card-body h5{
+    justify-content: center;
+    display: flex;
+    color: black;
+}
