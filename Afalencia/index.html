@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-o48Q74aWydC3V0cNqOFiR4PR08Mzsnxqs25kYOu8d0e8MfoG5hfo5qn0PyG6bqgG" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>A Falência</h1>
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide cards" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -16,27 +36,29 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img src="" class="d-block w-100" alt="...">
+                <img src="/assets/riojaneiro.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Visão Geral</h5>
+                  <h5 class="top">Visão Geral</h5>
                   <p>Conta a história de Camila, uma mulher burguesa, casada com Francisco Teodoro (um rico empresário) e amante do doutor Gervásio. No entanto, com a falência e o posterior suicídio do marido, ela precisa recomeçar.
                      A narrativa está situada na última década do século XIX, no Rio de Janeiro, e mostra os primeiros anos após a Proclamação da República. Assim, com uma linguagem objetiva e antirromântica, apresenta uma visão realista sobre a sociedade da época e, também, traços naturalistas, como o determinismo.</p>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
-                <img src="" class="d-block w-100" alt="...">
+                <img src="/assets/riojaneiro.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Caracteristícas</h5>
                   <p>Apresenta crítica à burguesia carioca do século XIX, pois, além da temática do adultério, visivelmente antirromântica, mostra também a decadência de uma família burguesa.
 
-                    É possível perceber elementos deterministas</p>
+                    É possível perceber elementos deterministas e traços de zoomorfização.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="...">
+                <img src="/assets/riojaneiro.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5 class="top-2">Notas</h5>
+                  <p>Por fim, o romance mostra o protagonismo de personagens femininas, descritas como mulheres fortes e capazes de serem independentes. Essa autonomia se mostra logo após a falência e o empobrecimento da família.
+                    
+                    Além disso, nota-se que o narrador é onisciente e, portanto, tem total conhecimento da história e dos personagens.</p>
                 </div>
               </div>
             </div>
@@ -49,5 +71,83 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-</body>
+
+          <div class="text-box">
+            <button href="#card1" onclick="enredo1()" class="hero-btn">Clique aqui para saber do enredo</button>
+        </div>
+
+        <div class="wrap-card">
+          <div class="card" style="width: 18rem;" id="card1">
+              <div class="card-body">
+                <h5 class="card-title">(1/7)</h5>
+                <p class="card-text">Em 1891, Francisco Teodoro é dono de um armazém que estoca café. É casado com Camila. 
+                  Eles fazem parte de uma família burguesa do século XIX. No entanto, o narrador mostra que há certa intimidade entre Camila e o doutor Gervásio.
+                </p>
+                <p onclick="enredo2()" id="enredo-pt2" class="ease-in-out">- Saber mais -</p>
+  
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;" id="card2">
+              <div class="card-body">
+                <h5 class="card-title">(2/7)</h5>
+                <p class="card-text">Teodoro quer que o filho Mário, com 19 anos, comece a trabalhar, e pensa em casar Nina com o capitão Rino, “apesar da procedência”, já que a mãe de Rino foi assassinada pelo marido, por cometer adultério.
+                  É importante dizer que Nina é filha ilegítima de Joca, irmão de Camila.</p>
+                  <p onclick="enredo3()" id="enredo-pt3" class="ease-in-out">- Saber mais -</p>
+              </div>
+          </div>
+  
+            <div class="card" style="width: 18rem;" id="card3">
+              <div class="card-body">
+                <h5 class="card-title">(3/7)</h5>
+                <p class="card-text">Em conversa com dona Joana, a tia extremamente católica de Camila, Gervásio descobre que ela sabe do caso entre ele e a sobrinha. 
+                  Segundo a velha, o “único cego ali é o pobre do marido” e “toda a gente sabe, infelizmente”. 
+                  Já Camila, ao pedir que o filho abandone a amante, percebe que Mário também sabe de seu caso com Gervásio.</p>
+                  <p onclick="enredo4()" id="enredo-pt4" class="ease-in-out" >- Saber mais -</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;" id="card4">
+              <div class="card-body">
+                <h5 class="card-title">(4/7)</h5>
+                <p class="card-text">O filho, então, diz que a mãe precisa escolher entre o médico e ele. Diante do choro dela, ele se arrepende do que disse, apesar de odiar o doutor Gervásio. 
+                  Assim, essa família vai vivendo, aparentemente feliz, enquanto Francisco Teodoro enriquece mais e mais, pois o preço do café está em alta.</p>
+                  <p onclick="enredo5()" id="enredo-pt5" class="ease-in-out" >- Saber mais -</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;" id="card5">
+              <div class="card-body">
+                <h5 class="card-title">(5/7)</h5>
+                <p class="card-text">Incomodado com o fato de Mário ficar até tarde na rua, o pai dá ordens a Noca, a Dionísio e “a todos os criados” para não deixarem o rapaz entrar. 
+                  Contudo, quando Mário chega, debaixo de um temporal, sua prima Nina desobedece ao tio e abre a porta para o rapaz. Ela ama o primo, mas ele não pensa em ter nenhum compromisso sério com ela.</p>
+                  <p onclick="enredo6()" id="enredo-pt6" class="ease-in-out" >- Saber mais -</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;" id="card6">
+              <div class="card-body">
+                <h5 class="card-title">(6/7)</h5>
+                <p class="card-text">Os pais do rapaz arranjam um casamento entre Mário e Paquita. 
+                  Eles se casam, para a infelicidade de Nina. Em seguida, Gervásio informa a Camila que Teodoro faliu. 
+                  O marido não suporta a humilhação e se mata. 
+                  Assim, a família de Camila fica pobre, dispensa os criados e se muda para uma casa simples.</p>
+                  <p onclick="enredo7()" id="enredo-pt7" class="ease-in-out" > - Saber mais -</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;" id="card7">
+              <div class="card-body">
+                <h5 class="card-title">(7/7)</h5>
+                <p class="card-text">Diante dos acontecimentos, Nina assume o protagonismo, pois cuida de todos os aspectos práticos, enquanto Camila se mostra perdida. 
+                  Quando Camila encontra uma solução, ou seja, casar-se com Gervásio, ela descobre que o médico já é casado. 
+                  No entanto, isso serve para fazer Camila reagir e encontrar disposição para começar uma vida nova.</p>
+                  <p id="enredo-pt8"></p>
+              </div>
+            </div>
+      </div>
+
+      <script src="script.js"></script>
+
+    </body>
 </html>
